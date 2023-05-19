@@ -11,8 +11,6 @@
 """
 from langchain.chains import RetrievalQA
 from langchain.prompts.prompt import PromptTemplate
-
-from config import LangChainCFG
 from clc.gpt_service import ChatGLMService
 from clc.source_service import SourceService
 
@@ -85,14 +83,3 @@ class LangChainApplication(object):
         result = self.llm_service._call(prompt)
         return result
 
-
-if __name__ == '__main__':
-    config = LangChainCFG()
-    application = LangChainApplication(config)
-    # result = application.get_knowledge_based_answer('马保国是谁')
-    # print(result)
-    # application.source_service.add_document('/home/searchgpt/yq/Knowledge-ChatGLM/docs/added/马保国.txt')
-    # result = application.get_knowledge_based_answer('马保国是谁')
-    # print(result)
-    result = application.get_llm_answer('马保国是谁')
-    print(result)
