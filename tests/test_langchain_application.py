@@ -7,8 +7,10 @@ sys.path.append(par_dir)
 
 from clc.langchain_application import LangChainApplication
 from config import LangChainCFG
+from logging_util import loggingSetup
 
 if __name__ == '__main__':
+    loggingSetup("./logs/test_langchain_application.txt")
     config = LangChainCFG()
     application = LangChainApplication(config)
     # result = application.get_knowledge_based_answer('马保国是谁')

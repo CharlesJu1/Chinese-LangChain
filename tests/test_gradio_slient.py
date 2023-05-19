@@ -15,5 +15,5 @@ app = gra.Interface(
     outputs="text",
 )
 app.launch(
-    server_name='0.0.0.0', server_port=8888, share=False,show_error=True, enable_queue=True
+    server_name='0.0.0.0', server_port=9999, share=False,show_error=True, enable_queue=True
 )

@@ -1,5 +1,9 @@
+
 import os
 import shutil
+
+pwd = os.path.dirname(os.path.abspath(__file__))
+print(f'in main.py pwd={pwd}, cwd={os.getcwd()}')
 
 from app_modules.overwrites import postprocess
 from app_modules.presets import *

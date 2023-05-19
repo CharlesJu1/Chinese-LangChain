@@ -4,3 +4,5 @@ docs/zh_wikipedia
 **/__pycache__
 **/*.swp
 **/*.pyc
+**/logs/
+**/clc-venv/

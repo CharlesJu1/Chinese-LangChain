@@ -26,6 +26,9 @@ def postprocess(
         temp.append((user, bot))
     return temp
 
+import os
+pwd = os.path.dirname(os.path.abspath(__file__))
+print(f'in overwrites.py pwd={pwd}')
 
 with open("./assets/custom.js", "r", encoding="utf-8") as f, open("./assets/Kelpy-Codos.js", "r",
                                                                   encoding="utf-8") as f2:
